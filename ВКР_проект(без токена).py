@@ -1,5 +1,4 @@
 # основная рабочая программа
-
 import telebot
 from telebot import types
 
