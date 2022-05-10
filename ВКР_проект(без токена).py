@@ -5,7 +5,7 @@ from telebot import types
 bot = telebot.TeleBot("ТОКЕН")
 markdown = ""
 
-# кнопка обратной связи в клаве
+# кнопка обратной связи
 markup = types.ReplyKeyboardMarkup(row_width=1, resize_keyboard=True)
 
 BUT = types.KeyboardButton(text="Кнопка обратной связи 📩")
