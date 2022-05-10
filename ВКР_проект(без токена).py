@@ -50,15 +50,12 @@ def get_user_info(call):
         but_1_3 = types.InlineKeyboardButton(text="О компании в цифрах 🏆", callback_data="1_3")
         but_1_4 = types.InlineKeyboardButton(text="Направления деятельности ↗️", callback_data="1_4")
         but_1_5 = types.InlineKeyboardButton(text="Ценности 🧩", callback_data="1_5")
-        but_1_6 = types.InlineKeyboardButton(text="Вселенная «Красного квадрата» 🌠",
-                                             url="https://cloud.mail.ru/public/cMTV/GyLLkNMxb", callback_data="1_6")
-
+       
         markup_inline1.add(but_1_1)
         markup_inline1.add(but_1_2)
         markup_inline1.add(but_1_3)
         markup_inline1.add(but_1_4)
         markup_inline1.add(but_1_5)
-        markup_inline1.add(but_1_6)
         bot.send_message(call.message.chat.id,
                          "{0.first_name},\nчто именно хотите узнать о компании?".format(call.from_user),
                          parse_mode="Markdown",
